@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title> <%= user.name %> </title>
+            <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+        </head>
+        <body>
+            <div class="center">
+                <h1> Here's all the information about <%= user.name %></h1>
+                <h3>Here you can see all the details about <%= user.name %></h3>
+
+                <!-- function goes through all the keys of the object and prints the key and value -->
+                <% Object.keys(user).forEach(function (key) { if(key !== "id"){ %> <!-- if the key is not id, print it (name, hero, address) and it's value-->
+                <table>
+                    <tr>
+                        <th><%= key %></th>
+                        <td><%= user[key] %></td>
+                    </tr>
+                </table>
+                <% }}) %> <!-- end of forEach loop -->
+
+                <button type="button" onclick="window.location.href='http://localhost:5000/users'">Return to Users List</button>
+            </div>
+        </body>
+    </html>

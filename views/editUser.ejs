@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Edit</title>
+            <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+        </head>
+        <body>
+            <h1>Edit Page</h1>
+            <h3>Welcome to: the edit User page</h3>
+            <h4>Here you can edit the user</h4>
+
+            <!--           /users/5 for example     -->
+            <form action="/users/<%= user.id %>" method="post">
+                <% Object.keys(user).forEach(function (key) { if(key !== "id"){%>  <!--Loops through the user without id -->
+                <!-- prints  out the key and the value in the input field -->
+                <div>
+                    <label> <%= key %>: </label> <label> <input type="text"
+                                                        name="<%= key %>"
+                                                        value="<%= user[key] %>" />
+                    </label>
+                </div>
+                <br>
+                <% }}) %> <!--End of the loop -->
+
+                    <!-- Edit Button -->
+                    <input type="submit" class="ibutton" name="Edit" value="Edit" formtarget="_blank">
+
+                    <!-- Delete Button -->
+                    <input type="submit" class="ibutton" name="Delete" value="Delete" formtarget="_blank">
+
+                    <!-- Return Button -->
+                    <button type="button" onclick="window.location.href='http://localhost:5000/users'">Return to Users List</button>
+            </form>
+        </body>
+    </html>
+

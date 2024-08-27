@@ -1,0 +1,74 @@
+nav{
+
+    background-color:lightcyan;
+    text-align:left;
+    font-size: larger;
+    padding: 25px;
+
+}
+
+nav a {
+    color: black;
+    text-decoration:none;
+    margin-right: 20px ;
+}
+
+#home {
+    margin-left: 60px;
+}
+
+.header {
+    width:30%;
+    justify-content: center;
+    margin-left: 600px;
+}
+
+.title {
+    width:60%;
+    justify-content: center;
+    margin-left: 500px;
+
+}
+
+#subtitle {
+    margin-left: 100px;
+}
+
+button {
+    height: 50px;
+    width: 200px;
+}
+
+.ibutton {
+    height:50px;
+    width:200px;
+}
+
+.center {
+    width:30%;
+    margin:auto;
+}
+
+.left {
+    margin-left: 300px;
+
+}
+
+figure {
+    display: inline-block;
+}
+
+.middle{
+    text-align:center;
+}
+
+.home, .infield {
+    margin-bottom: 20px;
+}
+
+#mbutton {
+    margin-bottom: 20px;
+    height:50px;
+    width:200px;
+}
+

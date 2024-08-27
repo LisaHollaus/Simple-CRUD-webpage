@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+            <title>User page</title>
+        </head>
+        <body>
+            <div class="center">
+                <h1 class="middle">User page</h1> <title>Users</title>
+                <button type="button" class="home" onclick="window.location.href='http://localhost:5000'">Home</button>
+                <br>
+                <button type="button" onclick="window.location.href= 'http://localhost:5000/new'">create new user</button>
+
+                <h3>Here you can see the names of our users</h3>
+                <!-- Prints out the names for each of the users and the buttons underneath -->
+                <% for (var i = 0; i < users.length; i++) { %>
+                    <p><%= users[i].name %></p>
+                    <button type="button" onclick="window.location.href= 'http://localhost:5000/users/<%= users[i].id %>'">Show Details</button>
+                    <button type="button" onclick="window.location.href= 'http://localhost:5000/users/<%= users[i].id %>/edit'">Edit details of this user </button>
+                <% } %>
+            </div>
+        </body>
+    </html>
+
