@@ -1,6 +1,7 @@
 Webtech Node js Project:
 
-This is a group project, a crud webpage with 5 different views:
+This is a group project by Alexander Berger, Maximilian Knapp, Christian Hummel and Lisa-Maria Hollaus
+A crud webpage with 5 different views:
 
 Home:
 
